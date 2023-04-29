@@ -25,4 +25,3 @@ child.sendline('exit')
 
 for line in x:
     print(line)
-
