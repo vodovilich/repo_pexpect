@@ -18,8 +18,8 @@ def send_show_command(ip, user, password, command):
 if __name__ == "__main__":
     ip_list = ["192.168.100.24", "192.168.100.27"]
     for ip in ip_list:
+        print(f"\n\nCONNECTING TO {ip}")
         print(send_show_command(ip, "gandalf", "grey", "sh ip int br"))
-        print("")
         
 """
 Default output - one string presented in bytes (you can see 'b' symbols) with /r and /n symbols.
