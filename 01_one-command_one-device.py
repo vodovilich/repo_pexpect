@@ -4,6 +4,7 @@ import sys
 
 #pexpect defaults: 
 # .expect returns 0 if matches the argument
+# .expect reads until FIRST MATCH: if you send 2 commands without expect => before will find only 1st commmand output
 # .sendline returns number of bytes send (1 symbol = 1 byte) + 1 byte for NEWLINE symbol
 print("pidor")
 
