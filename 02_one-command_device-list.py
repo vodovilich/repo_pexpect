@@ -25,7 +25,7 @@ if __name__ == "__main__":
 Default output - one string presented in bytes (you can see 'b' symbols) with /r and /n symbols.
 To eliminate this -  encoding="utf-8" is used
 To see that shit : 
-    import pprint import pprint
+    from pprint import pprint
     return output.re[;ace("\r\n","\n")]
     pprint(send_show_command("192.168.100.27", "gandalf", "grey", "sh ip int br"))
 """
