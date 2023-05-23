@@ -18,7 +18,7 @@ def send_show_command(ip, command):
 
 
 if __name__ == "__main__":
-    ip_list = ["wsi-kra02", "jcp-kra02", "m-kra02"]
+    ip_list = ["101-vyos01", "201-vyos02", "301-vyos02"]
     for ip in ip_list:
         iflist = []
         print(f"\n\nCONNECTING TO {ip}")
