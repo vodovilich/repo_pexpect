@@ -2,7 +2,7 @@ import yaml
 import pexpect
 from pexpect.exceptions import ExceptionPexpect
 
-SECRET_FILE_NAME = '01_secret.yml'
+SECRET_FILE_NAME = '06_secret.yml'
 
 with open(SECRET_FILE_NAME, 'r') as f:
     creds = yaml.safe_load(f)
@@ -46,7 +46,7 @@ def iosxe_sh_cmd(ip, user, password, command):
         return output.replace("\r", "")
         
 def main():
-    with open('01_devlist.yml', 'r') as f:
+    with open('06_devlist.yml', 'r') as f:
         devs = yaml.safe_load(f)
     for wlc in devs['aireos']:
         try:
